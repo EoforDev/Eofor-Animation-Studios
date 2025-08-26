@@ -2,7 +2,7 @@
 
 body {
   background-color: rgb(0, 5, 10);
-  color: rgb(230, 230, 230);
+  color: rgb(225, 225, 225);
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   display: flex;
@@ -31,7 +31,7 @@ h1 {
   margin: 10px auto;
   font-size: 18px auto;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
 }
 
 .socials {
@@ -57,11 +57,12 @@ h1 {
 }
 
 .emails a {
-  color: rgb(255, 255, 255);
+  color: rgb(225, 225, 225);
   text-decoration: none;
   font-weight: bold;
 }
 
 .emails a:hover {
   text-decoration: underline;
+  color: rgb(80, 180, 255);
 }
