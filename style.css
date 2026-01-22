@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: #FAFAFA;
-  color: #050505;
+  background-color:#050505;
+  color:#FAFAFA;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -22,39 +22,55 @@ main {
 /* LOGO EM MOVIMENTO: */
 .logo-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center; 
-  width: 100% auto;
+  width: 100%;
+  gap: 5px auto;
 }
 
 .logo {
   width: auto;
-  height: auto;
   max-width: 150px;
-  margin-bottom: -20px;
+  margin-bottom: 10px;
+  height: auto;
 }
 
-.logo.left { z-index: 2; animation: logoLeft 1.5s ease forwards; }
 .logo.right { z-index: 1; animation: logoRight 1.5s ease forwards; }
 
+.logo.middle {
+  max-width: 150px; 
+  z-index: 3; 
+  animation: logoMiddle 3.5s ease forwards;
+}
+
+.logo.left { z-index: 2; animation: logoLeft 1.5s ease forwards;}
+
 @keyframes logoRight {
-  from { transform: translateX(-50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from { transform: translateY(-15px); opacity: 1; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes logoMiddle {
+  from { opacity: 0; }  to { opacity: 1; }
 }
 
 @keyframes logoLeft {
-  from { transform: translateX(50px); opacity: 1; }
-  to { transform: translateX(0); opacity: 1; }
+  from { transform: translateY(15px); opacity: 1; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 /* DESCRIÇÃO: */
 .descricao {
   max-width: 100%;
   width: 100% auto;
-  margin: 20px auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   font-size: 15px auto;
-  padding: 25px;
-  font-weight: 400;
+  padding: 15px auto;
+  font-weight: 100;
 }
 
 strong {font-weight: bold;}
@@ -74,7 +90,7 @@ strong {font-weight: bold;}
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: -20px;
+  margin-top: 30px;
   flex-wrap: wrap;
 }
 
@@ -104,8 +120,8 @@ strong {font-weight: bold;}
 footer {
   text-align: center;
   font-size: 12px;
-  color: #888888;
-  margin-top: 120px;
+  color: #f1f1f1;
+  margin-top: 100px;
 }
 
 footer p {
