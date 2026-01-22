@@ -77,13 +77,13 @@ strong {font-weight: bold;}
 
 .descricao a {text-decoration: none;}
 
-.eoforstudios a {color: #3b8bc4;}
+.eoforstudios a {color: #2a8dd3;}
 .eoforanimation a {color: #e16b45;}
 .eoformusic a {color: #cc8b60;}
 
-.eoforstudios a:hover {color: #15517c;}
-.eoforanimation a:hover {color: #e7b100;}
-.eoformusic a:hover {color: #8d5c3d;}
+.eoforstudios a:hover {color:rgb(0, 149, 255);}
+.eoforanimation a:hover {color: #ff4000;}
+.eoformusic a:hover {color: #ffa66a;}
 
 /* REDES SOCIAIS: */
 .social {
@@ -109,18 +109,18 @@ strong {font-weight: bold;}
 }
 
 .email a {
-  color: #e16b45;
+  color:#e16b45;
   font-weight: bold;
   text-decoration: none;
 }
 
-.email a:hover { color: #5aade9; }
+.email a:hover {color:#5aade9;}
 
 /* RODAPÉ: */
 footer {
   text-align: center;
   font-size: 12px;
-  color: #f1f1f1;
+  color: #fafafa;
   margin-top: 100px;
 }
 
